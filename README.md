@@ -1,5 +1,11 @@
 # Electron + React Boilerplate
 
+![Electron](https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+
 This is a starter template for building desktop applications with **Electron** and **React**. This project includes a simple setup for both the frontend (React using Create React App) and the backend (Electron).
 
 ## Features
@@ -24,7 +30,7 @@ Make sure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   git clone https://github.com/5sensprod/appSv2.git
    ```
 
 2. Install dependencies for the whole project:
@@ -91,17 +97,17 @@ your-project/
 
 This project uses **ESLint** and **Prettier** for linting and formatting:
 
-- To check for linting errors, run: 
+- To check for linting errors, run:
 
-   ```bash
-   npm run lint
-   ```
+  ```bash
+  npm run lint
+  ```
 
 - To format the code, run:
 
-   ```bash
-   npm run format
-   ```
+  ```bash
+  npm run format
+  ```
 
 ### Customizing for Future Projects
 
