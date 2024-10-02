@@ -1,4 +1,3 @@
-
 # Electron + React Boilerplate
 
 This is a starter template for building desktop applications with **Electron** and **React**. This project includes a simple setup for both the frontend (React using Create React App) and the backend (Electron).
@@ -24,30 +23,30 @@ Make sure you have the following installed:
 
 1. Clone this repository:
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/<your-username>/<your-repo-name>.git
-   \`\`\`
+   ```
 
 2. Install dependencies for the whole project:
 
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. Install dependencies for the frontend React app:
 
-   \`\`\`bash
+   ```bash
    cd frontend
    npm install
-   \`\`\`
+   ```
 
 ### Development
 
 #### Start both Electron and React in development mode:
 
-\`\`\`bash
+```bash
 npm start
-\`\`\`
+```
 
 - React will run on `http://localhost:3000`.
 - Electron will automatically open and load the React app.
@@ -56,22 +55,22 @@ npm start
 
 To generate the production build of both the frontend and the Electron app, run:
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 The production-ready app will be available in the `dist/` folder.
 
 ### Scripts
 
-- **\`npm start\`**: Starts the Electron app with React in development mode.
-- **\`npm run build\`**: Builds both the frontend and Electron app for production.
-- **\`npm run format\`**: Formats the code using Prettier.
-- **\`npm run lint\`**: Checks for linting errors using ESLint.
+- **`npm start`**: Starts the Electron app with React in development mode.
+- **`npm run build`**: Builds both the frontend and Electron app for production.
+- **`npm run format`**: Formats the code using Prettier.
+- **`npm run lint`**: Checks for linting errors using ESLint.
 
 ### Project Structure
 
-\`\`\`bash
+```
 your-project/
 ├── dist/                  # Electron build outputs (production)
 ├── electron/              # Electron main process files
@@ -86,7 +85,7 @@ your-project/
 ├── .eslintrc              # ESLint configuration
 ├── package.json           # Project configuration and dependencies
 └── README.md              # Project documentation
-\`\`\`
+```
 
 ### Linting and Code Formatting
 
@@ -94,15 +93,15 @@ This project uses **ESLint** and **Prettier** for linting and formatting:
 
 - To check for linting errors, run: 
 
-   \`\`\`bash
+   ```bash
    npm run lint
-   \`\`\`
+   ```
 
 - To format the code, run:
 
-   \`\`\`bash
+   ```bash
    npm run format
-   \`\`\`
+   ```
 
 ### Customizing for Future Projects
 
