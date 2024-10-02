@@ -1,0 +1,51 @@
+{
+  "name": "appsv2",
+  "version": "1.0.0",
+  "description": "Votre description ici",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "concurrently \"npm run frontend\" \"npm run electron\"",
+    "frontend": "cd frontend && npm start",
+    "electron": "wait-on http://localhost:3000 && cross-env NODE_ENV=development electron electron/main.js",
+    "build": "npm run build-frontend && npm run build-electron", 
+    "build-frontend": "cd frontend && npm run build", 
+    "build-electron": "cross-env NODE_ENV=production electron-builder" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "serialport": "^12.0.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^9.2.1",
+    "concurrently": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^32.1.2",
+    "electron-builder": "^25.0.5",
+    "wait-on": "^8.0.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "build": {
+  "appId": "com.votreapp.id",
+  "productName": "VotreApp",
+  "files": [
+    "electron/main.js",
+    "electron/preload.js",
+    "frontend/build/**/*",
+    "package.json",
+    "node_modules/**/*"
+  ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "publish": null
+  }
+}
