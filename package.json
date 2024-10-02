@@ -7,9 +7,9 @@
     "start": "concurrently \"npm run frontend\" \"npm run electron\"",
     "frontend": "cd frontend && npm start",
     "electron": "wait-on http://localhost:3000 && cross-env NODE_ENV=development electron electron/main.js",
-    "build": "npm run build-frontend && npm run build-electron", 
-    "build-frontend": "cd frontend && npm run build", 
-    "build-electron": "cross-env NODE_ENV=production electron-builder" 
+    "build": "npm run build-frontend && npm run build-electron",
+    "build-frontend": "cd frontend && npm run build",
+    "build-electron": "cross-env NODE_ENV=production electron-builder"
   },
   "keywords": [],
   "author": "",
@@ -31,15 +31,15 @@
     "webpack-cli": "^5.1.4"
   },
   "build": {
-  "appId": "com.votreapp.id",
-  "productName": "VotreApp",
-  "files": [
-    "electron/main.js",
-    "electron/preload.js",
-    "frontend/build/**/*",
-    "package.json",
-    "node_modules/**/*"
-  ],
+    "appId": "com.votreapp.id",
+    "productName": "VotreApp",
+    "files": [
+      "electron/main.js",
+      "electron/preload.js",
+      "frontend/build/**/*",
+      "package.json",
+      "node_modules/**/*"
+    ],
     "directories": {
       "buildResources": "assets"
     },
